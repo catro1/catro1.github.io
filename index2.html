@@ -19,7 +19,7 @@
   <script type="text/javascript">
       window.init = {
           'urlRoot': "",
-          'csrfNonce': "387de1647bedb2aef9091c9f2d51cb90c56e515eb647ba7acdacb911b8454422",
+          'csrfNonce': "70f9580ebde15177b5764ff029739338e3e3059586002c1dd50e99bc18b0d777",
           'userMode': "users",
           'userId': 0,
           'userName': null,
@@ -127,7 +127,7 @@
             <ul class="dropdown-menu dropdown-menu-end">
               
               <li>
-                  <span class="dropdown-item bg-primary text-white" @click="set" value="en">
+                  <span class="dropdown-item " @click="set" value="en">
                     English
                   </span>
               </li>
@@ -253,54 +253,24 @@
 
 <main role="main">
   
-  <div class="jumbotron">
-    <div class="container">
-      <h1>
-        Login
-      </h1>
-    </div>
-  </div>
-
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col offset-md-2 col-lg-6 offset-lg-3">
-        <div>
-  
-
-  
+    <div class="col-md-6 offset-md-3">
+        <img class="w-100 mx-auto d-block" style="max-width: 500px;padding: 50px;padding-top: 14vh;" src="/themes/core-beta/static/img/logo.png?d=c6a7ed78" />
+        <h3 class="text-center">
+            <p>A cool CTF platform from <a href="https://ctfd.io">ctfd.io</a></p>
+            <p>Follow us on social media:</p>
+            <a href="https://twitter.com/ctfdio"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>&nbsp;
+            <a href="https://facebook.com/ctfdio"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>&nbsp;
+            <a href="https://github.com/ctfd"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+        </h3>
+        <br>
+        <h4 class="text-center">
+            <a href="admin">Click here</a> to login and setup your CTF
+        </h4>
+    </div>
 </div>
 
-        
-
-        
-          <form method="post" accept-charset="utf-8">
-            <div class="mb-3">
-              <b><label class="form-label" for="name">User Name or Email</label></b>
-              <input autocomplete="username email" autofocus class="form-control" id="name" name="name" required type="text" value="">
-            </div>
-
-            <div class="mb-3">
-              <b><label class="form-label" for="password">Password</label></b>
-              <input autocomplete="current-password" class="form-control" id="password" name="password" required type="password" value="">
-            </div>
-
-            <div class="row pt-3">
-              <div class="col-6 col-md-8">
-                <a class="align-middle" href="/reset_password">
-                  Forgot your password?
-                </a>
-              </div>
-
-              <div class="col-6 col-md-4">
-                <input class="btn btn-block btn-primary w-100" id="_submit" name="_submit" type="submit" value="Submit">
-              </div>
-            </div>
-
-            <input id="nonce" name="nonce" type="hidden" value="387de1647bedb2aef9091c9f2d51cb90c56e515eb647ba7acdacb911b8454422">
-          </form>
-        
-      </div>
-    </div>
   </div>
 
 </main>

@@ -1,233 +1,330 @@
 <!DOCTYPE html>
-<html class="login-pf" lang="en" dir="ltr">
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<!-- UIO Adjustments -->
-<script type="application/json">{
-  "utility" : "aria"
-}</script>
-<!-- End of UiO Adjustments -->
+  <title>IN5290 2025</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/themes/core-beta/static/img/favicon.ico?d=c6a7ed78" type="image/x-icon">
 
-            <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <title>Log in to Weblogin</title>
-    <link rel="icon" href="/resources/4a325/login/uio/img/favicon.ico" />
-            <link href="/resources/4a325/common/keycloak/vendor/patternfly-v4/patternfly.min.css" rel="stylesheet" />
-            <link href="/resources/4a325/common/keycloak/vendor/patternfly-v3/css/patternfly.min.css" rel="stylesheet" />
-            <link href="/resources/4a325/common/keycloak/vendor/patternfly-v3/css/patternfly-additions.min.css" rel="stylesheet" />
-            <link href="/resources/4a325/common/keycloak/lib/pficon/pficon.css" rel="stylesheet" />
-            <link href="/resources/4a325/login/uio/css/uio.css" rel="stylesheet" />
-            <script src="/resources/4a325/login/uio/js/uio-app-header.js" type="text/javascript"></script>
-    <script type="importmap">
-        {
-            "imports": {
-                "rfc4648": "/resources/4a325/common/keycloak/vendor/rfc4648/rfc4648.js"
-            }
-        }
-    </script>
-  <script src="/resources/4a325/login/uio/js/menu-button-links.js" type="module"></script>
-    <script type="module">
-        import { startSessionPolling } from "/resources/4a325/login/uio/js/authChecker.js";
+  
 
-        startSessionPolling(
-            "/realms/Weblogin/login-actions/restart?client_id=http%3A%2F%2Fuio.instructure.com%2Fsaml2&tab_id=OHaA5twDp6U&client_data=eyJydSI6Imh0dHBzOi8vdWlvLmluc3RydWN0dXJlLmNvbS9sb2dpbi9zYW1sIiwicm0iOiJwb3N0In0&skip_logout=true"
-        );
-    </script>
-    <script type="module">
-        document.addEventListener("click", (event) => {
-            const link = event.target.closest("a[data-once-link]");
+  
+    <link rel="stylesheet" href="/themes/core-beta/static/assets/main.e9ec7884.css">
+  
 
-            if (!link) {
-                return;
-            }
+  
 
-            if (link.getAttribute("aria-disabled") === "true") {
-                event.preventDefault();
-                return;
-            }
+  <script  src="/themes/core-beta/static/assets/color_mode_switcher.52334129.js"></script>
 
-            const { disabledClass } = link.dataset;
+  <script type="text/javascript">
+      window.init = {
+          'urlRoot': "",
+          'csrfNonce': "70f9580ebde15177b5764ff029739338e3e3059586002c1dd50e99bc18b0d777",
+          'userMode': "users",
+          'userId': 0,
+          'userName': null,
+          'userEmail': null,
+          'teamId': null,
+          'teamName': null,
+          'start': null,
+          'end': null,
+          'themeSettings': null,
+          'eventSounds': [
+            "/themes/core/static/sounds/notification.webm",
+            "/themes/core/static/sounds/notification.mp3",
+          ],
+      }
+  </script>
 
-            if (disabledClass) {
-                link.classList.add(...disabledClass.trim().split(/\s+/));
-            }
-
-            link.setAttribute("role", "link");
-            link.setAttribute("aria-disabled", "true");
-        });
-    </script>
-        <script type="module">
-            import { checkAuthSession } from "/resources/4a325/login/uio/js/authChecker.js";
-
-            checkAuthSession(
-                "BH/oCj/BkD8d0tU3L8nhM5/nmA807I6qmuswftEO6VY"
-            );
-        </script>
+  
 </head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a href="/" class="navbar-brand">
+      
+        IN5290 2025
+      
+    </a>
 
-<body class="" data-page-id="login-login>
-<div class="login-pf-page">
-<!-- UIO Adjustments -->
-    <div id="header-uio-identity" class="login-pf-page-header">
-<!-- End of UIO Adjustments -->
-        <div id="kc-header-wrapper"
-             class=""><div class="app-global-wrapper"><a id="header-uio-logo" href="http://www.uio.no/" rel="nofollow"><span class="invisible">uio.no</span></a></div></div>
+    <button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#base-navbars"
+        aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="base-navbars">
+      <ul class="navbar-nav me-auto">
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/users">
+              Users
+            </a>
+          </li>
+
+          
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/scoreboard">
+              Scoreboard
+            </a>
+          </li>
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/challenges">
+            Challenges
+          </a>
+        </li>
+      </ul>
+
+      <hr class="d-sm-flex d-md-flex d-lg-none">
+
+      <ul class="navbar-nav ms-md-auto d-block d-sm-flex d-md-flex">
+        
+
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/register">
+                <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Register">
+                  <i class="fas fa-user-plus d-none d-md-inline d-lg-none"></i>
+                </span>
+                <span class="d-sm-inline d-md-none d-lg-inline">
+                  <i class="fas fa-user-plus pe-1"></i>
+                  Register
+                </span>
+              </a>
+            </li>
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="/login">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+                <i class="fas fa-sign-in-alt d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                <i class="fas fa-sign-in-alt pe-1"></i>
+                Login
+              </span>
+            </a>
+          </li>
+        
+
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-language d-none d-md-inline"></i>
+            <span class="d-sm-inline d-md-none">
+              <i class="fas fa-language pe-1"></i>
+              Change language
+            </span>
+          </button>
+          <form x-data="LanguageForm">
+            <ul class="dropdown-menu dropdown-menu-end">
+              
+              <li>
+                  <span class="dropdown-item " @click="set" value="en">
+                    English
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="de">
+                    Deutsch
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="pl">
+                    Polski
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="es">
+                    Español
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ar">
+                    اَلْعَرَبِيَّةُ
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="zh_CN">
+                    简体中文
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="zh_TW">
+                    繁體中文
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="fr">
+                    Français
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ko">
+                    한국어
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ru">
+                    русский язык
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="pt_BR">
+                    Português do Brasil
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sk">
+                    Slovenský jazyk
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ja">
+                    日本語
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="it">
+                    Italiano
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="vi">
+                    tiếng Việt
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ca">
+                    Català
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="el">
+                    Ελληνικά
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="fi">
+                    Suomi
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ro">
+                    Română
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sl">
+                    Slovenščina
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sv">
+                    Svenska
+                  </span>
+              </li>
+            </ul>
+          </form>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link theme-switch" type="button">
+            <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Toggle theme">
+              <i class="fas fa-sun d-none d-md-inline"></i>
+            </span>
+            <span class="d-sm-inline d-md-none">
+              <i class="fas fa-sun pe-1"></i>
+              Toggle theme
+            </span>
+          </button>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-<!-- UIO Adjustments -->
-<div id="app-header-core">
-      <div class="app-global-wrapper">
-
-        <!-- app name -->
-
-        <div id="header-appname">
-          <a href="/">Weblogin</a>
-        </div>
-
-
-
-
-          <!-- language-menu -->
-    <div class="pf-c-dropdown" id="kc-locale">
-  <div id="kc-locale-dropdown" class="">
-                            <a href="#" class="button-text" ><img src="/resources/4a325/login/uio/img/globe.svg" alt=""><span class="button-text" style="padding-left: 5px;">Language</span></a>
-                            <ul class="pf-c-dropdown__menu pf-m-align-right">
-                                    <li class="">
-                                        <a class="pf-c-dropdown__menu-item" href="/realms/Weblogin/login-actions/authenticate?client_id=http%3A%2F%2Fuio.instructure.com%2Fsaml2&amp;tab_id=OHaA5twDp6U&amp;client_data=eyJydSI6Imh0dHBzOi8vdWlvLmluc3RydWN0dXJlLmNvbS9sb2dpbi9zYW1sIiwicm0iOiJwb3N0In0&amp;execution=06408a73-3d11-4237-90cb-13d50023ca41&amp;kc_locale=en">English</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="pf-c-dropdown__menu-item" href="/realms/Weblogin/login-actions/authenticate?client_id=http%3A%2F%2Fuio.instructure.com%2Fsaml2&amp;tab_id=OHaA5twDp6U&amp;client_data=eyJydSI6Imh0dHBzOi8vdWlvLmluc3RydWN0dXJlLmNvbS9sb2dpbi9zYW1sIiwicm0iOiJwb3N0In0&amp;execution=06408a73-3d11-4237-90cb-13d50023ca41&amp;kc_locale=nb">Norsk (bokmål)</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="pf-c-dropdown__menu-item" href="/realms/Weblogin/login-actions/authenticate?client_id=http%3A%2F%2Fuio.instructure.com%2Fsaml2&amp;tab_id=OHaA5twDp6U&amp;client_data=eyJydSI6Imh0dHBzOi8vdWlvLmluc3RydWN0dXJlLmNvbS9sb2dpbi9zYW1sIiwicm0iOiJwb3N0In0&amp;execution=06408a73-3d11-4237-90cb-13d50023ca41&amp;kc_locale=nn">Norsk (nynorsk)</a>
-                                    </li>
-                            </ul>
-
-          </div>
-</div>
-
-
-
-
-</div>
-</div>
-</div>
-
-
-<!-- End of UIO adjustments -->
-    <div class="card-pf">
-        <header class="login-pf-header">
-           <!-- Localization options moved to uio customizations -->
-                <h1 id="kc-page-title">        Log in to your UiO account
-
-</h1>
-      </header>
-      <div id="kc-content">
-        <div id="kc-content-wrapper">
-
-        <div id="kc-form">
-          <div id="kc-form-wrapper">
-                <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="https://weblogin2.uio.no/realms/Weblogin/login-actions/authenticate?session_code=fg8j74oxoaG2PWqMp_Vo9S8pnQjCHunC0pvDOP2q5_c&amp;execution=06408a73-3d11-4237-90cb-13d50023ca41&amp;client_id=http%3A%2F%2Fuio.instructure.com%2Fsaml2&amp;tab_id=OHaA5twDp6U&amp;client_data=eyJydSI6Imh0dHBzOi8vdWlvLmluc3RydWN0dXJlLmNvbS9sb2dpbi9zYW1sIiwicm0iOiJwb3N0In0" method="post">
-                        <div class="form-group">
-                            <label for="username" class="pf-c-form__label pf-c-form__label-text">UiO username</label>
-
-                            <input  id="username" class="pf-c-form-control" name="username" value=""  type="text" autofocus autocomplete="off"
-                                   aria-invalid=""
-                            />
-
-
-                        </div>
-
-                    <div class="form-group">
-                        <label for="password" class="pf-c-form__label pf-c-form__label-text">Password</label>
-
-                        <div class="pf-c-input-group">
-                            <input  id="password" class="pf-c-form-control" name="password" type="password" autocomplete="off"
-                                   aria-invalid=""
-                            />
-			
-                            <button class="pf-c-button pf-m-control" type="button" aria-label="Show password"
-                                    aria-controls="password"  data-password-toggle
-                                    data-icon-show="fa fa-eye" data-icon-hide="fa fa-eye-slash"
-                                    data-label-show="Show password" data-label-hide="Hide password">
-                                <i class="fa fa-eye" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        
-
-                    </div>
-
-                    <div class="form-group login-pf-settings">
-                        <div id="kc-form-options">
-                                <div class="checkbox">
-                                    <label>
-                                            <input id="rememberMe" name="rememberMe" type="checkbox"> Remember me
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="">
-                            </div>
-
-                      </div>
-
-                      <div id="kc-form-buttons" class="form-group">
-                          <input type="hidden" id="id-hidden-input" name="credentialId" />
-                          <input class="pf-c-button pf-m-primary pf-m-block btn-lg" name="login" id="kc-login" type="submit" value="Sign In"/>
-                      </div>
-                      <span><a  href="https://passord.uio.no/?lang=en">Forgot username or password?</a></span>
-                </form>
-            </div>
-        </div>
-        <script type="module" src="/resources/4a325/login/uio/js/passwordVisibility.js"></script>
-
-
-
-	<!-- UiO Customizations -->
-
-
-        </div>
-      </div>
-
+<main role="main">
+  
+  <div class="container">
+    <div class="row">
+    <div class="col-md-6 offset-md-3">
+        <img class="w-100 mx-auto d-block" style="max-width: 500px;padding: 50px;padding-top: 14vh;" src="/themes/core-beta/static/img/logo.png?d=c6a7ed78" />
+        <h3 class="text-center">
+            <p>A cool CTF platform from <a href="https://ctfd.io">ctfd.io</a></p>
+            <p>Follow us on social media:</p>
+            <a href="https://twitter.com/ctfdio"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>&nbsp;
+            <a href="https://facebook.com/ctfdio"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>&nbsp;
+            <a href="https://github.com/ctfd"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+        </h3>
+        <br>
+        <h4 class="text-center">
+            <a href="admin">Click here</a> to login and setup your CTF
+        </h4>
     </div>
-<!-- UIO adjustments -->
- <footer id="app-footer">
-    <div class="app-global-wrapper">
-
-      <!-- footer app name -->
-
-      <div id="footer-appname">
-        <span>Weblogin</span>
-      </div>
-
-      <!-- footer content -->
-
-      <div id="app-footer-content">
-        <div>
-          <h2>Terms</h2>
-          <ul>
-            <li><a href="https://www.uio.no/english/about/regulations/privacy-declarations/">Privacy</a></li>
-            <li><a href="https://uustatus.no/nb/erklaringer/publisert/9336562c-fbb2-48db-b3f2-54df3b231a44">Acessibility statement (in Norwegian)</a></li>
-            <li><a href="https://www.uio.no/om/regelverk/personvern/personvernerklering-nett.html">Cookies</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2>Help</h2>
-          <ul>
-            <li><a href=https://www.uio.no/tjenester/it/brukernavn-passord/passordtjenester/hjelp/>Login guidance (in Norwegian)</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2>Contact</h2>
-          <ul>
-            <li><a href=https://www.uio.no/english/services/it/contact/it-help/index.html>Contact information</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-<!-- End of UiO Adjustments -->
+</div>
 
   </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container text-center">
+    <a href="https://ctfd.io" class="text-secondary">
+      <small class="text-muted">
+        Powered by CTFd
+      </small>
+    </a>
+  </div>
+</footer>
+
+<div x-data>
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div x-ref="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto" x-text="$store.toast.title"></strong>
+        <small>just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" x-html="$store.toast.html">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div x-data>
+  <div class="modal fade" x-ref="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" x-text="$store.modal.title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p x-html="$store.modal.html"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script type="module"  src="/themes/core-beta/static/assets/index.8a9f494f.js"></script><script type="module"  src="/themes/core-beta/static/assets/page.811c80a2.js"></script>
+
+
+
+
+
 </body>
 </html>
